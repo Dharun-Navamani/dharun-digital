@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Dharun Digital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Icons -->
+<title>Dharun Digital | SEO & Digital Marketing</title>
+
+<!-- SEO -->
+<meta name="description" content="Dharun Digital provides SEO, digital marketing, and website development services.">
+<meta name="robots" content="index, follow">
+
+<!-- GOOGLE SEARCH CONSOLE -->
+<meta name="google-site-verification" content="YkMBepWKHdS0s1CB1E55Q6wzIiAxGIuwLbOolvT-_sI" />
+
+<!-- ICONS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Analytics -->
+<!-- GOOGLE ANALYTICS -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4VD5NLHM0S"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -19,57 +28,80 @@ gtag('config', 'G-4VD5NLHM0S');
 <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="loadBlogs()">
 
+<!-- NAVBAR -->
 <header>
   <h2>Dharun Digital</h2>
   <nav>
-    <a href="#">Home</a>
+    <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
+    <a href="blog.html">Blog</a>
   </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <h1>Grow Your Business 🚀</h1>
   <p>SEO & Digital Marketing Solutions</p>
   <button class="btn" onclick="contactClick()">Get Started</button>
 </section>
 
+<!-- SERVICES -->
 <section class="services">
   <h2>Our Services</h2>
 
   <div class="card-container">
     <div class="card">
       <i class="fa-solid fa-chart-line"></i>
-      <h3>SEO</h3>
-      <p>Rank higher on Google</p>
+      <h3>SEO Optimization</h3>
+      <p>Improve your Google ranking and traffic.</p>
     </div>
 
     <div class="card">
       <i class="fa-solid fa-bullhorn"></i>
-      <h3>Marketing</h3>
-      <p>Grow your brand</p>
+      <h3>Digital Marketing</h3>
+      <p>Grow your brand and reach more customers.</p>
     </div>
 
     <div class="card">
       <i class="fa-solid fa-code"></i>
-      <h3>Development</h3>
-      <p>Modern websites</p>
+      <h3>Web Development</h3>
+      <p>Modern and responsive websites.</p>
     </div>
   </div>
 </section>
 
+<!-- BLOG SECTION -->
+<section class="services">
+  <h2>Latest Blogs</h2>
+  <p>Learn SEO, marketing and growth strategies.</p>
+
+  <div id="blogList" class="card-container"></div>
+<body id="home"></body>
+  <br>
+  <a href="blog.html" class="btn">View All Blogs</a>
+</section>
+
+<!-- CTA -->
+<section class="services">
+  <h2>Ready to Grow?</h2>
+  <p>Let’s take your business to the next level.</p>
+  <button class="btn" onclick="contactClick()">Contact Now</button>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 Dharun Digital</p>
+  <p>© 2026 Dharun Digital. All rights reserved.</p>
 </footer>
 
-<!-- WhatsApp -->
+<!-- WHATSAPP -->
 <a href="#" onclick="whatsappClick()" class="whatsapp">
   <i class="fa-brands fa-whatsapp"></i>
 </a>
 
-<script src="js/script.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>
