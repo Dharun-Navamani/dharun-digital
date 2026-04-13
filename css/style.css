@@ -1,17 +1,29 @@
 body {
   font-family: Arial;
-  margin: 0;
   text-align: center;
+  margin: 0;
 }
 
 header {
   background: black;
   color: white;
-  padding: 15px;
+  padding: 10px;
 }
 
 nav a {
   color: white;
   margin: 10px;
   text-decoration: none;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 10px;
 }
