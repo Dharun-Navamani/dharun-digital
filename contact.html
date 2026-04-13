@@ -2,14 +2,32 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Contact | Dharun Digital</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Dharun Digital</title>
+
+<!-- SEO -->
+<meta name="description" content="Contact Dharun Digital for SEO and digital marketing services.">
+<meta name="robots" content="index, follow">
+
+<!-- GOOGLE SEARCH CONSOLE -->
+<meta name="google-site-verification" content="YkMBepWKHdS0s1CB1E55Q6wzIiAxGIuwLbOolvT-_sI" />
+
+<!-- GOOGLE ANALYTICS -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VD5NLHM0S"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-4VD5NLHM0S');
+</script>
 
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <header>
   <h1>Dharun Digital</h1>
   <nav>
@@ -19,22 +37,53 @@
   </nav>
 </header>
 
-<hr>
+<!-- CONTACT SECTION -->
+<section class="services">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you. Send us a message!</p>
 
-<h2>Contact Us</h2>
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
 
-<form onsubmit="submitForm(event)">
-  <input type="text" placeholder="Your Name" required><br><br>
-  <input type="email" placeholder="Your Email" required><br><br>
-  <textarea placeholder="Your Message"></textarea><br><br>
-  <button type="submit">Send Message</button>
-</form>
+<!-- EXTRA CONTACT INFO -->
+<section class="services">
+  <div class="card-container">
 
+    <div class="card">
+      <h3>📞 Phone</h3>
+      <p>+91 99945 93003</p>
+    </div>
+
+    <div class="card">
+      <h3>📧 Email</h3>
+      <p>dharundigital@gmail.com</p>
+    </div>
+
+    <div class="card">
+      <h3>📍 Location</h3>
+      <p>Tamil Nadu, India</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="services">
+  <h2>Need Immediate Help?</h2>
+  <button class="btn" onclick="whatsappClick()">Chat on WhatsApp</button>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 Dharun Digital</p>
+  <p>© 2026 Dharun Digital. All rights reserved.</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>
