@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>Dharun Digital | SEO Services</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dharun Digital</title>
 
-<!-- SEO -->
-<meta name="description" content="SEO & Digital Marketing services by Dharun Digital">
-<meta name="robots" content="index, follow">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Google Analytics -->
+<!-- Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4VD5NLHM0S"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -24,36 +22,52 @@ gtag('config', 'G-4VD5NLHM0S');
 <body>
 
 <header>
-  <h1>Dharun Digital</h1>
+  <h2>Dharun Digital</h2>
   <nav>
-    <a href="index.html">Home</a>
+    <a href="#">Home</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
-<hr>
-
-<section>
-  <h2>🚀 Grow Your Business Online</h2>
-  <p>SEO, Marketing & Website Development</p>
-
-  <button onclick="contactClick()">Contact Us</button>
-  <button onclick="whatsappClick()">WhatsApp</button>
+<section class="hero">
+  <h1>Grow Your Business 🚀</h1>
+  <p>SEO & Digital Marketing Solutions</p>
+  <button class="btn" onclick="contactClick()">Get Started</button>
 </section>
 
-<hr>
-
-<section>
+<section class="services">
   <h2>Our Services</h2>
-  <p>✔ SEO Optimization</p>
-  <p>✔ Digital Marketing</p>
-  <p>✔ Website Development</p>
+
+  <div class="card-container">
+    <div class="card">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>SEO</h3>
+      <p>Rank higher on Google</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-bullhorn"></i>
+      <h3>Marketing</h3>
+      <p>Grow your brand</p>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-code"></i>
+      <h3>Development</h3>
+      <p>Modern websites</p>
+    </div>
+  </div>
 </section>
 
 <footer>
   <p>© 2026 Dharun Digital</p>
 </footer>
+
+<!-- WhatsApp -->
+<a href="#" onclick="whatsappClick()" class="whatsapp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
 
 <script src="js/script.js"></script>
 
