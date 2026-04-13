@@ -1,11 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VD5NLHM0S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<meta charset="UTF-8">
+<title>Contact | Dharun Digital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  gtag('config', 'G-4VD5NLHM0S');
-</script>
+<link rel="stylesheet" href="css/style.css">
 </head>
+
+<body>
+
+<header>
+  <h1>Dharun Digital</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<hr>
+
+<h2>Contact Us</h2>
+
+<form onsubmit="submitForm(event)">
+  <input type="text" placeholder="Your Name" required><br><br>
+  <input type="email" placeholder="Your Email" required><br><br>
+  <textarea placeholder="Your Message"></textarea><br><br>
+  <button type="submit">Send Message</button>
+</form>
+
+<footer>
+  <p>© 2026 Dharun Digital</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
